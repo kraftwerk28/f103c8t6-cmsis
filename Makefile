@@ -90,6 +90,3 @@ flash: all
 
 erase:
 	st-flash erase
-
-dgb: $(ELF)
-	arm-none-eabi-gdb $(ELF)

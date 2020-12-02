@@ -28,8 +28,6 @@ void init_gpio() {
 }
 
 int main() {
-  __enable_irq();
-  SystemInit();
   init_gpio();
   while (1) {
     GPIO_WriteBit(GPIOA, GPIO_Pin_0, Bit_RESET);
